@@ -44,7 +44,7 @@ class Address extends Model
         "last_name",
         "phone",
         "email",
-        "street address",
+        "street_address",
         "city",
         "state",
     ];

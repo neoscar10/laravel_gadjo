@@ -41,6 +41,8 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|Address whereState($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Address whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property string|null $street_address
+ * @method static \Illuminate\Database\Eloquent\Builder|Address whereStreetAddress($value)
  */
 	class Address extends \Eloquent {}
 }
@@ -244,6 +246,8 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @mixin \Eloquent
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \App\Models\Order> $orders
+ * @property-read int|null $orders_count
  */
 	class User extends \Eloquent {}
 }
