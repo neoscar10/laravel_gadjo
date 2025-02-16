@@ -24,6 +24,8 @@ use Filament\Forms\Set;
 class BrandResource extends Resource
 {
     protected static ?string $model = Brand::class;
+    protected static ?string $recordTitleAttribute = 'name';
+    protected static ?int $navigationSort = 2;
 
     protected static ?string $navigationIcon = 'heroicon-o-computer-desktop';
 

@@ -22,6 +22,12 @@ use Forms\Components\TextInput;
 class UserResource extends Resource
 {
     protected static ?string $model = User::class;
+    
+    public static function getGloballySearchableAttributes(): array
+    {
+        return ['name', 'email'];
+    }
+    protected static ?int $navigationSort = 1;
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
 
