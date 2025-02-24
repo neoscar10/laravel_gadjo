@@ -18,16 +18,16 @@
         <div class="flex flex-col md:flex-row md:items-center md:justify-end md:gap-x-7 md:ps-7">
           
           <!-- Navigation Links -->
-          <a wire:navigate class="font-medium {{ request()->is('/') ? 'text-blue-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6" href="/">Home</a>
+          <a wire:navigate class="font-medium {{ request()->is('/') ? 'text-orange-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6" href="/">Home</a>
           
-          <a wire:navigate class="font-medium {{ request()->is('categories') ? 'text-blue-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6" href="/categories">Categories</a>
+          <a wire:navigate class="font-medium {{ request()->is('categories') ? 'text-orange-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6" href="/categories">Categories</a>
           
-          <a wire:navigate class="font-medium {{ request()->is('products*') ? 'text-blue-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6" href="/products">Products</a>
+          <a wire:navigate class="font-medium {{ request()->is('products*') ? 'text-orange-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6" href="/products">Products</a>
           
           <!-- Cart -->
-          <a wire:navigate class="flex items-center font-medium {{ request()->is('cart') ? 'text-blue-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6 transition duration-200" href="/cart">
+          <a wire:navigate class="flex items-center font-medium {{ request()->is('cart') ? 'text-orange-600' : 'text-gray-500 hover:text-gray-400' }} py-3 md:py-6 transition duration-200" href="/cart">
             🛒 <span class="ml-1">Cart</span> 
-            <span class="py-0.5 px-2 rounded-full text-xs font-medium bg-blue-100 text-blue-700 ml-2">{{$total_count}}</span>
+            <span class="py-0.5 px-2 rounded-full text-xs font-medium bg-orange-100 text-orange-700 ml-2">{{$total_count}}</span>
           </a>
 
           <!-- Login & Dropdown -->
@@ -35,7 +35,7 @@
             
             @guest
             <!-- Login Button -->
-            <a wire:navigate class="py-2.5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none" href="/login">
+            <a wire:navigate class="py-2.5 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-orange-600 text-white hover:bg-orange-700 disabled:opacity-50 disabled:pointer-events-none" href="/login">
               <svg class="flex-shrink-0 w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                   <circle cx="12" cy="7" r="4" />
@@ -56,9 +56,9 @@
               <!-- Dropdown Content -->
               <div x-show="open" @click.away="open = false"
                 class="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-50 overflow-hidden transition-all duration-200">
-                <a wire:navigate href="/profile" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition">👤 Profile</a>
-                <a wire:navigate href="/settings" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition">⚙️ Settings</a>
-                <a wire:navigate href="/orders" class="block px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition">📦 My Orders</a>
+                {{-- <a wire:navigate href="" class="block px-4 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition">👤 Profile</a>
+                <a wire:navigate href="/settings" class="block px-4 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition">⚙️ Settings</a> --}}
+                <a wire:navigate href="/my-orders" class="block px-4 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-700 transition">📦 My Orders</a>
                 <a wire:navigate href="/logout" class="block px-4 py-3 text-sm text-red-600 hover:bg-red-50 hover:text-red-700 transition">🚪 Logout</a>
               </div>
 

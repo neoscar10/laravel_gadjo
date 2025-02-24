@@ -3,7 +3,7 @@
     <!-- Grid -->
     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
       <div class="col-span-full lg:col-span-1">
-        <a class="flex-none text-xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" aria-label="Brand">gadjo</a>
+        <a class="flex-none text-xl font-semibold text-white   " href="#" aria-label="Brand">gadjo</a>
       </div>
       <!-- End Col -->
 
@@ -11,9 +11,9 @@
         <h4 class="font-semibold text-gray-100">Product</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/categories">Categories</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/products">All Products</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="/products">Featured Products</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200   " href="/categories">Categories</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200   " href="/products">All Products</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200   " href="/products">Featured Products</a></p>
         </div>
       </div>
       <!-- End Col -->
@@ -22,10 +22,10 @@
         <h4 class="font-semibold text-gray-100">Company</h4>
 
         <div class="mt-3 grid space-y-3">
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">About us</a></p>
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Blog</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200   " href="#">About us</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200   " href="#">Blog</a></p>
 
-          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">Customers</a></p>
+          <p><a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200   " href="#">Customers</a></p>
         </div>
       </div>
       <!-- End Col -->
@@ -34,11 +34,11 @@
         <h4 class="font-semibold text-gray-100">Stay up to date</h4>
 
         <form>
-          <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 dark:bg-gray-800">
+          <div class="mt-4 flex flex-col items-center gap-2 sm:flex-row sm:gap-3 bg-white rounded-lg p-2 ">
             <div class="w-full">
-              <input type="text" id="hero-input" name="hero-input" class="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Enter your email">
+              <input type="text" id="hero-input" name="hero-input" class="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-orange-500 focus:ring-orange-500 disabled:opacity-50 disabled:pointer-events-none" placeholder="Enter your email">
             </div>
-            <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#">
+            <a class="w-full sm:w-auto whitespace-nowrap p-3 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-orange-600 text-white hover:bg-orange-700 disabled:opacity-50 disabled:pointer-events-none   " href="#">
               Subscribe
             </a>
           </div>

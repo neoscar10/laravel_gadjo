@@ -56,4 +56,6 @@ class Address extends Model
     public function getFullNameAttribute(){
         return $this->firstname ." ". $this->lastname;
     }
+
+    
 }
